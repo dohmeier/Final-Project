@@ -1,0 +1,348 @@
+.clearfix::after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+}
+
+body {
+	 font-family: proxima-nova, sans-serif;
+     font-weight: thin;
+     color: #D8BBA4;
+
+}
+
+h1 {
+     width: 100px;
+     float: left;
+     font-size: 24px;
+     color: #2f2f2f;
+     padding-top: 20px;
+     padding-bottom: 25px;
+     margin-left: 30px;
+     color: #D8BBA4;;
+}
+
+h2 {
+	text-align: center;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	font-size: 24px;
+	font-family: proxima-nova;
+	font-weight: thin;
+}
+
+#menu {
+	padding-top: 20px;
+}
+
+#menu > .dropdown {
+	margin-right: 40px;
+}
+
+#menu > li {
+	margin-right: 40px;
+}
+
+nav {
+	float: right;
+	display: inline-block;
+}
+
+nav li {
+	display: inline-block;
+}
+
+nav a {
+	color: #D8BBA4;;
+	text-decoration: none;
+	font-size: 14px;
+}
+
+header {
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(255, 255, 255, 0.9);
+	z-index: 10;
+}
+
+.header-wrapper {
+	background-color: rgba(255, 255, 255, .2);
+	width: 100%;
+}
+
+.wrapper-all {
+	width: 80%;
+	margin: 69px auto 0;
+}
+
+.title{
+	margin-bottom: 40px;
+}
+
+.row.one {
+	height: 300px;
+	margin-bottom: 20px;
+	margin: zero auto;
+}
+
+.row.two {
+	height: 300px;
+	margin-bottom: 20px;
+}
+
+.row.three {
+	height: 400px;
+	margin-bottom: 20px;
+}
+
+.row.four {
+	height: 300px;
+	margin-bottom: 80px;
+}
+
+.image.center {
+	width: 50%;
+	height: 300px;
+	float: left;
+}
+
+.outfit_info {
+	background: rgba(255, 255, 255, 0.85);
+	padding-top: 12%;
+	padding-bottom: 30%;
+	color: #999999;
+	text-align: center;
+	font-size: 12px;
+	line-height: 20px;
+	text-decoration: uppercase;
+}
+
+.next_button {
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	right: 20px;
+	top: 40%;
+}
+
+.next_button2 {
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	right: 20px;
+	top: 40%;
+}
+
+.next_button3 {
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	right: 20px;
+	top: 40%;
+}
+
+.next_button4 {
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	right: 20px;
+	top: 40%;
+}
+
+.back_button {
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	left: 20px;
+	top: 40%;
+}
+
+.back_button2 {
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	left: 20px;
+	top: 40%;
+}
+
+.back_button3 {
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	left: 20px;
+	top: 40%;
+}
+
+.back_button4 {
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	left: 20px;
+	top: 40%;
+}
+
+.image.outerwear1 {
+	position: relative;
+	width: 100%;
+	background: url("../images/offduty/chic/one/zara_tribal_linen_coat.png") no-repeat center center;
+	background-size: contain;
+	height: 300px;
+}
+
+.image.outerwear2 {
+	position: relative;
+	width: 100%;
+	background: url("../images/offduty/comfy/one/zara_chicbomber.png") no-repeat center center;
+	background-size: contain;
+}
+
+.image.outerwear3 {
+	position: relative;
+	width: 100%;
+	background: url("../images/offduty/comfy/one/zara_chicbomber.png") no-repeat center center;
+	background-size: contain;
+}
+
+.image.tops1 {
+	position: relative;
+	width: 100%;
+	background: url("../images/offduty/chic/two/SJ218BW_Gwen_Tank_Bone_White_208x280.png") no-repeat center center;
+	background-size: contain;
+	height: 300px;
+}
+
+.image.tops2 {
+	position: relative;
+	width: 100%;
+	background: url("../images/offduty/comfy/two/Somewhere_white.png") no-repeat center center;
+	background-size: contain;
+}
+
+.image.tops3 {
+	position: relative;
+	width: 100%;
+	background: url("../images/offduty/edgy/two/SJ218B_Gwen_Tank_Black.png") no-repeat center center;
+	background-size: contain;
+}
+
+.image.bottoms1 {
+	position: relative;
+	width: 100%;
+	background: url("../images/offduty/chic/three/SJ002W_WANDERER_Skinny_Jeans_White-FRONT1.png") no-repeat center center;
+	background-size: contain;
+	height: 400px;
+}
+
+.image.bottoms2 {
+	position: relative;
+	width: 100%;
+	background: url("../images/offduty/comfy/three/SJ004G_LUX_Jogger_Grey.png") no-repeat center center;
+	background-size: contain;
+}
+
+.image.bottoms3 {
+	position: relative;
+	width: 100%;
+	background: url("../images/offduty/edgy/three/SJ_RILEY_Denim_Shorts_BLACK.png") no-repeat center center;
+	background-size: contain;
+}
+
+.image.shoes1 {
+	position: relative;
+	width: 100%;
+	background: url("../images/offduty/chic/four/Rachel_Zoe_Maddi-black.png") no-repeat center center;
+	background-size: contain;
+	height: 300px;
+}
+
+.image.shoes2 {
+	position: relative;
+	width: 100%;
+	background: url("../images/offduty/comfy/four/ASOS_adidas Originals Purple ZX Flux Verve Mesh Sneakers.png") no-repeat center center;
+	background-size: contain;
+}
+
+.image.shoes3 {
+	position: relative;
+	width: 100%;
+	background: url("../images/offduty/edgy/four/Jeffrey Campbell 'Perouze' Over the Knee Boot.png") no-repeat center center;
+	background-size: contain;
+}
+
+.next {
+	width: 15%;
+	float: left;
+	padding-top: 65px;
+	padding-left: 25px;
+}
+
+.next-hover {
+	display: none;
+	float: left;
+	padding-top: 65px;
+	position: absolute;
+	padding-left: 25px;
+}
+
+.next:hover .next-hover {
+	display: block;
+	cursor: pointer;
+}
+
+.next:hover .next {
+	display: none;
+}
+
+/* Style The Dropdown Button */
+.dropbtn {
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.whiteShoes {
+	background: url("../images/offduty/edgy/four/Jeffrey Campbell 'Perouze' Over the Knee Boot.png") no-repeat center center;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: #2f2f2f;
+    width: 100px;
+    padding: 10px 10px;
+    text-decoration: none;
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content li:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    color: #cccccc;
+}
