@@ -75,38 +75,38 @@
 	];
 
 	// declare index variable and set to 0
-	var index = 0;
-	var indexOfLastImage = chicOuterwear.length - 1;
+	var indexOuterwear = 0;
+	var indexOuterwearOfLastImage = chicOuterwear.length - 1;
 
 	// when the back button is clicked
 	$(".back_button").eq(0).click(function(){
 		$('.outfit_info').remove();
-		if (index === 0) {
-			index = indexOfLastImage;
+		if (indexOuterwear === 0) {
+			indexOuterwear = indexOuterwearOfLastImage;
 		} else {
-			index = index - 1;
+			indexOuterwear = indexOuterwear - 1;
 		}
 
 
-		$(".image.outerwear1").css("background-image", chicOuterwear[index].img);
+		$(".image.outerwear1").css("background-image", chicOuterwear[indexOuterwear].img);
 	});
 
 	// when the next button is clicked
 	$(".next_button").eq(0).click(function(){
 		console.log('next button');
 		$('.outfit_info').remove();
-		if (index === indexOfLastImage) {
-			index = 0;
+		if (indexOuterwear === indexOuterwearOfLastImage) {
+			indexOuterwear = 0;
 		} else {
-			index = index + 1;
+			indexOuterwear = indexOuterwear + 1;
 		}
-		$(".image.outerwear1").css("background-image", chicOuterwear[index].img);
+		$(".image.outerwear1").css("background-image", chicOuterwear[indexOuterwear].img);
 	});
 
 $(".row .outerwear1").hover(
 	function() {
   		var clothing = $(this).data("image");
-  		var outfitInfo = chicOuterwear[index];
+  		var outfitInfo = chicOuterwear[indexOuterwear];
 		$(this).prepend($("<div class='outfit_info'>"+ outfitInfo.designer+ "<br>" + outfitInfo.description + "<br>" + outfitInfo.price +"</div>"));
 	}, 
 	function() {
@@ -190,38 +190,38 @@ var chicTops = [
 	];
 
 	// declare index variable and set to 0
-	var index = 0;
-	var indexOfLastImage = chicTops.length - 1;
+	var indexTops = 0;
+	var indexTopsOfLastImage = chicTops.length - 1;
 
 	// when the back button is clicked
 	$(".back_button2").eq(0).click(function(){
 		$('.outfit_info').remove();
-		if (index === 0) {
-			index = indexOfLastImage;
+		if (indexTops === 0) {
+			indexTops = indexTopsOfLastImage;
 		} else {
-			index = index - 1;
+			indexTops = indexTops - 1;
 		}
 
 
-		$(".image.tops1").css("background-image", chicTops[index].img);
+		$(".image.tops1").css("background-image", chicTops[indexTops].img);
 	});
 
 	// when the next button is clicked
 	$(".next_button2").eq(0).click(function(){
 		console.log('next button');
 		$('.outfit_info').remove();
-		if (index === indexOfLastImage) {
-			index = 0;
+		if (indexTops === indexTopsOfLastImage) {
+			indexTops = 0;
 		} else {
-			index = index + 1;
+			indexTops = indexTops + 1;
 		}
-		$(".image.tops1").css("background-image", chicTops[index].img);
+		$(".image.tops1").css("background-image", chicTops[indexTops].img);
 	});
 
 $(".row .tops1").hover(
 	function() {
   		var clothing = $(this).data("image");
-  		var outfitInfo = chicTops[index];
+  		var outfitInfo = chicTops[indexTops];
 		$(this).prepend($("<div class='outfit_info'>"+ outfitInfo.designer+ "<br>" + outfitInfo.description + "<br>" + outfitInfo.price +"</div>"));
 	}, 
 	function() {
@@ -305,38 +305,38 @@ var chicBottoms = [
 	];
 
 // declare index variable and set to 0
-	var index = 0;
-	var indexOfLastImage = chicBottoms.length - 1;
+	var indexBottoms = 0;
+	var indexBottomsOfLastImage = chicBottoms.length - 1;
 
 	// when the back button is clicked
 	$(".back_button3").eq(0).click(function(){
 		$('.outfit_info').remove();
-		if (index === 0) {
-			index = indexOfLastImage;
+		if (indexBottoms === 0) {
+			indexBottoms = indexBottomsOfLastImage;
 		} else {
-			index = index - 1;
+			indexBottoms = indexBottomsOfLastImage - 1;
 		}
 
 
-		$(".image.bottoms1").css("background-image", chicBottoms[index].img);
+		$(".image.bottoms1").css("background-image", chicBottoms[indexBottoms].img);
 	});
 
 	// when the next button is clicked
 	$(".next_button3").eq(0).click(function(){
 		console.log('next button');
 		$('.outfit_info').remove();
-		if (index === indexOfLastImage) {
-			index = 0;
+		if (indexBottoms === indexBottomsOfLastImage) {
+			indexBottoms = 0;
 		} else {
-			index = index + 1;
+			indexBottoms = indexBottoms + 1;
 		}
-		$(".image.bottoms1").css("background-image", chicBottoms[index].img);
+		$(".image.bottoms1").css("background-image", chicBottoms[indexBottoms].img);
 	});
 
 $(".row .bottoms1").hover(
 	function() {
   		var clothing = $(this).data("image");
-  		var outfitInfo = chicBottoms[index];
+  		var outfitInfo = chicBottoms[indexBottoms];
 		$(this).prepend($("<div class='outfit_info'>"+ outfitInfo.designer+ "<br>" + outfitInfo.description + "<br>" + outfitInfo.price +"</div>"));
 	}, 
 	function() {
@@ -355,11 +355,11 @@ var chicShoes = [
 			price: "$178.80"
 		},
 		{
-			img: "url(images/offduty/chic/four/zara_leather_mule_shoes_c35801.png)",
-			url: "http://www.zara.com/us/en/woman/shoes/view-all/leather-mule-shoes-c719531p3715530.html",
-			designer: "ZARA",
-			description: "White Mule Shoes",
-			price: "$119"
+			img: "url(images/offduty/chic/four/STEVEMADDEN-SANDALS_TANAR_NATURAL-LEATHER.png)",
+			url: "http://www.stevemadden.com/product/TRENDS/WOMENS/Nudes/TANAR/pc/4157/c/2163/sc/3809/239786.uts?selectedColor=NATURAL-LEATHER",
+			designer: "STEVE MADDEN",
+			description: "Tanar - Natural Leather",
+			price: "$69.95"
 		},
 		 {
 			img: "url(images/offduty/chic/four/Madewell_the_daniela_lace-up_sandal.png)",
@@ -374,42 +374,105 @@ var chicShoes = [
 			designer: "RACHEL ZOE",
 			description: "Maddi Backless Flatforms - Brandy",
 			price: "$178.80"
+		},
+		{
+			img: "url(images/offduty/chic/four/jeffrey_Campbell_Pink_Heels.png)",
+			url: "http://shop.nordstrom.com/s/jeffrey-campbell-lindsay-ankle-strap-sandal-women/4256863?origin=category-personalizedsort&fashioncolor=LIGHT%20PINK%20SUEDE",
+			designer: "JEFFREY CAMPBELL",
+			description: "'Lindsay' Ankle Strap Sandal - Light Pink Suede",
+			price: "$129.95"
+		},
+		{
+			img: "url(images/offduty/chic/four/VC_black.png)",
+			url: "http://shop.nordstrom.com/s/vince-camuto-krysta-platform-sandal-women/4246762?origin=category-personalizedsort&fashioncolor=BLACK",
+			designer: "VINCE CAMUTO",
+			description: "'Krysta' Platform Sandal - Black",
+			price: "$119.95"
+		},
+		{
+			img: "url(images/offduty/chic/four/stevemadden-dress_pipa_natural.png)",
+			url: "http://www.stevemadden.com/product/TRENDS/WOMENS/Nudes/PIPA/pc/4157/c/2163/sc/3809/239495.uts?selectedColor=NATURAL",
+			designer: "STEVE MADDEN",
+			description: "Pipa - Natural",
+			price: "$109.95"
+		},
+		{
+			img: "url(images/offduty/chic/four/stevemadden-dress_pipa_white.png)",
+			url: "http://www.stevemadden.com/product/TRENDS/WOMENS/Nudes/PIPA/pc/4157/c/2163/sc/3809/239495.uts?selectedColor=NATURAL",
+			designer: "STEVE MADDEN",
+			description: "Pipa - White",
+			price: "$109.95"
+		},
+		{
+			img: "url(images/offduty/chic/four/STEVEMADDEN-SANDALS_IRENEE_OLIVE-NUBUCK.png)",
+			url: "http://www.stevemadden.com/product/TRENDS/WOMENS/Nudes/IRENEE/pc/4157/c/2163/sc/3809/237633.uts?selectedColor=TAN-SUEDE",
+			designer: "STEVE MADDEN",
+			description: "Irenee - Olive Nubuck",
+			price: "$79.95"
+		},
+		{
+			img: "url(images/offduty/chic/four/STEVEMADDEN-SANDALS_IRENEE_TAN-SUEDE.png)",
+			url: "http://www.stevemadden.com/product/TRENDS/WOMENS/Nudes/IRENEE/pc/4157/c/2163/sc/3809/237633.uts?selectedColor=TAN-SUEDE",
+			designer: "STEVE MADDEN",
+			description: "Irenee - Tan Suede",
+			price: "$79.95"
+		},
+		{
+			img: "url(images/offduty/chic/four/STEVEMADDEN-SANDALS_KENSIE_BLUSH-SUEDE.png)",
+			url: "http://www.stevemadden.com/product/TRENDS/WOMENS/Nudes/KENSIE/pc/4157/c/2163/sc/3809/239991.uts?selectedColor=BLUSH-SUEDE",
+			designer: "STEVE MADDEN",
+			description: "Kensie - Blush Suede",
+			price: "$69.95"
+		},
+		{
+			img: "url(images/offduty/chic/four/STEVEMADDEN-SANDALS_LIVEANA_GREY-SUEDE.png)",
+			url: "http://www.stevemadden.com/product/TRENDS/WOMENS/Nudes/LIVEANA/pc/4157/c/2163/sc/3809/237035.uts?selectedColor=GREY-SUEDE",
+			designer: "STEVE MADDEN",
+			description: "Liveana - Grey Suede",
+			price: "$62.98"
+		},
+		{
+			img: "url(images/offduty/chic/four/STEVEMADDEN-SANDALS_SWEETYY_LIGHT-BLUE.png)",
+			url: "http://www.stevemadden.com/product/TRENDS/WOMENS/Nudes/SWEETYY/pc/4157/c/2163/sc/3809/238601.uts?selectedColor=BLUSH-SUEDE",
+			designer: "STEVE MADDEN",
+			description: "Sweetyy - Light Blue",
+			price: "$79.95"
 		}
 	];
 
 // declare index variable and set to 0
-	var index = 0;
-	var indexOfLastImage = chicShoes.length - 1;
+	var indexShoes = 0;
+	var indexShoesOfLastImage = chicShoes.length - 1;
 
 	// when the back button is clicked
 	$(".back_button4").eq(0).click(function(){
 		$('.outfit_info').remove();
-		if (index === 0) {
-			index = indexOfLastImage;
+		if (indexShoes === 0) {
+			indexShoes = indexShoesOfLastImage;
 		} else {
-			index = index - 1;
+			indexShoes = indexShoes - 1;
 		}
 
 
-		$(".image.shoes1").css("background-image", chicShoes[index].img);
+		$(".image.shoes1").css("background-image", chicShoes[indexShoes].img);
 	});
 
 	// when the next button is clicked
 	$(".next_button4").eq(0).click(function(){
 		console.log('next button');
 		$('.outfit_info').remove();
-		if (index === indexOfLastImage) {
-			index = 0;
+		if (indexShoes === indexShoesOfLastImage) {
+			indexShoes = 0;
 		} else {
-			index = index + 1;
+			indexShoes = indexShoes + 1;
 		}
-		$(".image.shoes1").css("background-image", chicShoes[index].img);
+		$(".image.shoes1").css("background-image", chicShoes[indexShoes].img);
 	});
 
 $(".row .shoes1").hover(
 	function() {
   		var clothing = $(this).data("image");
-  		var outfitInfo = chicShoes[index];
+  		var outfitInfo = chicShoes[indexShoes];
 		$(this).prepend($("<div class='outfit_info'>"+ outfitInfo.designer+ "<br>" + outfitInfo.description + "<br>" + outfitInfo.price +"</div>"));
 	}, 
 	function() {
